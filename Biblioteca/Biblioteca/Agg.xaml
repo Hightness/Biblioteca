@@ -1,0 +1,36 @@
+﻿<Window x:Class="Biblioteca.Agg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteca"
+        mc:Ignorable="d"
+        Title="Agg" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Titolo : " Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Label Content="Autore : " Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Label Content="Genere : " Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Label Content="Scaffale : " Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Label Content="Num_P : " Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Width="80" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Titolo" />
+        <TextBox Width="80" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Autore" />
+        <ComboBox  x:Name="GeneriCombo"  Grid.Column="2" Grid.Row="2" Width="80" Height="22" />
+        <ComboBox x:Name="ScaffaliCombo"  Grid.Column="2" Grid.Row="4" Width="80" Height="22" />
+        <TextBox Width="80" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Num_P" />
+        <Button  Width="80" Content="Aggiungi" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="Bottone"  />
+    </Grid>
+    
+</Window>
